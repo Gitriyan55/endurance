@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aetheris Systems | Quantitative Research & Software Engineering Solutions</title>
+  <meta name="description" content="Aetheris Systems delivers cutting-edge software development, quantitative research, backtesting platforms, and custom financial and trading models.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background decorations -->
+  <div class="grid-bg"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+  <div class="bg-glow glow-3"></div>
+
+  <!-- Header / Navigation -->
+  <header id="header">
+    <div class="container">
+      <a href="#home" class="logo" id="nav-logo">
+        <div class="logo-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07090e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+        </div>
+        ENDURANCE RESEARCH
+      </a>
+      <ul class="nav-links" id="nav-links-menu">
+        <li><a href="#home" class="active" id="link-home">Home</a></li>
+        <li><a href="#about" id="link-about">About</a></li>
+        <li><a href="#services" id="link-services">Services</a></li>
+        <li><a href="#sandbox" id="link-sandbox">Backtesting</a></li>
+        <li><a href="#contact" id="link-contact">Contact</a></li>
+      </ul>
+      <div class="nav-btn">
+        <a href="#sandbox" class="btn btn-primary" id="btn-nav-launch">Launch</a>
+      </div>
+      <button class="menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="badge">
+              <span class="dot"></span>
+              ENDURANCE V1.0 Active
+            </div>
+            <h1>Engineering the Future of <span class="text-gradient">Quantitative Finance</span></h1>
+            <p>We build high-performance software systems, develop advanced mathematical models, and run comprehensive backtesting pipelines for global markets.</p>
+            <div class="hero-actions">
+              <a href="#sandbox" class="btn btn-primary" id="btn-hero-sandbox">Run Backtests</a>
+              <a href="#services" class="btn btn-secondary" id="btn-hero-learn">Our Capabilities</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="glass-panel hero-stats-card">
+              <div class="hero-card-header">
+                <span class="card-title-muted">Live Stream Tracker</span>
+                <span class="card-title-val" id="stream-profit">+24.8%</span>
+              </div>
+              <div class="sparkline-container">
+                <canvas id="hero-sparkline"></canvas>
+              </div>
+              <div class="hero-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-lbl">Active Signals</span>
+                  <span class="stat-val" id="stream-signals">1,482</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-lbl">Latency</span>
+                  <span class="stat-val" id="stream-latency">14.2 ms</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="badge">Who We Are</div>
+            <h3>Pioneering custom technology for quantitative analytics</h3>
+            <p>At Aetheris Systems, we bridge the gap between financial theory and software engineering. We serve institutional clients, fund managers, and developers requiring institutional-grade software solutions.</p>
+            <p>Our multidisciplinary team combines deep domain expertise in financial engineering, distributed cloud architecture, and low-latency programming to deliver robust analytical tools and custom models.</p>
+          </div>
+          <div class="about-charter">
+            <div class="charter-card">
+              <p class="charter-quote">
+                To carry on the business of software development, technology solutions, market and quantitative research, and backtesting, including the design, development, deployment, and maintenance of software and analytical tools; provision of IT-enabled services; development and testing of financial and trading models; and delivery of related research, data analysis, and technology consulting services.
+              </p>
+              <div class="charter-author">
+                <span class="author-line"></span>
+                <span class="author-title">Core Charter & Mission Statement</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / Capabilities Section -->
+    <section id="services" class="reveal">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Capabilities</div>
+          <h2>Our Core Offerings</h2>
+          <p>We deliver production-ready software solutions, research workflows, and custom financial models built for modern scalability and performance.</p>
+        </div>
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="glass-panel service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>Software & Analytical Tools</h3>
+            <p>Design, development, deployment, and ongoing maintenance of custom technical solutions. We build modern frontends, high-performance execution engines, and analytics wrappers.</p>
+            <ul class="service-list">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Low-Latency Execution Engines
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Distributed Compute Services
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Clean REST & gRPC API Design
+              </li>
+            </ul>
+          </div>
+          <!-- Card 2 -->
+          <div class="glass-panel service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3>Custom Trading & Analytics Solutions</h3>
+            <p>Develop tailored applications and analytical tools for financial research, portfolio analysis, and algorithmic trading workflows.</p>
+            <ul class="service-list">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Python-Based Financial Applications
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Trading API Integration
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Analytics Dashboards & Automation
+              </li>
+            </ul>
+          </div>
+          <!-- Card 3 -->
+          <div class="glass-panel service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+              </svg>
+            </div>
+            <h3>Market Data Analytics</h3>
+            <p>Process and analyze historical and real-time market data to generate meaningful insights for investment research and decision-making.</p>
+            <ul class="service-list">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Market Data Processing
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Data Visualization
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Statistical & Performance Analysis
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Backtesting Sandbox -->
+    <section id="sandbox" class="sandbox reveal">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Interactive</div>
+          <h2>Quantitative Backtesting Engine</h2>
+          <p>Configure model parameters, select asset classes, and simulate strategy performance. Experience the speed and accuracy of Aetheris Systems infrastructure.</p>
+        </div>
+        <div class="sandbox-container">
+          <!-- Left Panel Controls -->
+          <div class="sandbox-controls">
+            <h3>Simulation Parameters</h3>
+            
+            <div class="control-group">
+              <label for="asset-class" class="control-label">Asset Class</label>
+              <select id="asset-class" class="control-input">
+                <option value="crypto">Cryptocurrency (BTC/ETH)</option>
+                <option value="equities">Equities (US Tech Stars)</option>
+                <option value="forex">Forex Majors (EUR/USD, GBP/USD)</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="strategy-type" class="control-label">Strategy Template</label>
+              <select id="strategy-type" class="control-input">
+                <option value="trend">Trend Following (Moving Avg Crossover)</option>
+                <option value="reversion">Mean Reversion (RSI & Bollinger)</option>
+                <option value="momentum">Vol Momentum Breakout</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="risk-slider" class="control-label">
+                Leverage Multiplier
+                <span id="risk-val">1.0x</span>
+              </label>
+              <input type="range" id="risk-slider" min="1" max="10" step="0.5" value="1">
+            </div>
+
+            <div class="control-group">
+              <label for="test-period" class="control-label">Backtest Range</label>
+              <select id="test-period" class="control-input">
+                <option value="1">Past 12 Months (Trending Market)</option>
+                <option value="3">Past 3 Years (High Volatility Cycle)</option>
+                <option value="5">Past 5 Years (Macro Expansion)</option>
+              </select>
+            </div>
+
+            <button class="btn btn-primary" id="btn-run-backtest" style="width: 100%; margin-top: 10px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Execute Strategy Backtest
+            </button>
+          </div>
+
+          <!-- Right Panel Results Workspace -->
+          <div class="sandbox-workspace">
+            <div class="metrics-row">
+              <div class="metric-box">
+                <div class="metric-label">Total Return</div>
+                <div class="metric-value" id="val-total-return">--</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-label">Sharpe Ratio</div>
+                <div class="metric-value" id="val-sharpe">--</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-label">Max Drawdown</div>
+                <div class="metric-value" id="val-drawdown" style="color: var(--accent-purple);">--</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-label">Win Rate</div>
+                <div class="metric-value" id="val-win-rate">--</div>
+              </div>
+            </div>
+
+            <div class="chart-window">
+              <!-- Overlay/Introduction -->
+              <div class="chart-overlay" id="chart-intro-overlay">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 12px; animation: pulse 2s infinite;">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="9" y1="17" x2="9" y2="10"></line>
+                  <line x1="15" y1="17" x2="15" y2="7"></line>
+                </svg>
+                <p>System Ready. Configure parameters and click run to stream strategy backtest.</p>
+              </div>
+              
+              <!-- Main Equity Curve Chart (SVG) -->
+              <svg id="main-chart"></svg>
+              
+              <!-- Custom Interactive Tooltip -->
+              <div class="chart-tooltip" id="chart-tooltip-box"></div>
+            </div>
+
+            <!-- Ticker Window -->
+            <div class="ticker-window">
+              <div class="ticker-header">
+                <span>Execution Log</span>
+                <span style="color: var(--text-dim);" id="ticker-status">Engine Idle</span>
+              </div>
+              <div class="ticker-rows" id="ticker-logs-content">
+                <div style="color: var(--text-dim); text-align: center; margin-top: 50px;">Simulation log stream will display trade entries and exits.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Grid -->
+    <section id="tech-stack" class="reveal">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Technologies</div>
+          <h2>Our Development Stack</h2>
+          <p>We leverage modern Python-based technologies and financial data tools to build quantitative research, backtesting, and analytics solutions.</p>
+        </div>
+        <div class="tech-grid">
+          <!-- Python -->
+          <div class="tech-card">
+            <div class="tech-icon-container">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2zm1 14.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-.5-4.5a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v3a1 1 0 0 1-1 1z"></path>
+              </svg>
+            </div>
+            <div class="tech-name">Python</div>
+            <div class="tech-desc">Core language for algorithmic trading, automation, and financial analysis.</div>
+          </div>
+          <!-- Pandas & NumPy -->
+          <div class="tech-card">
+            <div class="tech-icon-container">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div class="tech-name">Pandas & NumPy</div>
+            <div class="tech-desc">High-performance data processing and statistical analysis.</div>
+          </div>
+          <!-- FastAPI -->
+          <div class="tech-card">
+            <div class="tech-icon-container">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+            <div class="tech-name">FastAPI</div>
+            <div class="tech-desc">Scalable backend services for analytics, automation, and trading systems.</div>
+          </div>
+          <!-- SQL & SQLite -->
+          <div class="tech-card">
+            <div class="tech-icon-container">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.5 19A3.5 3.5 0 0 0 21 15.5c0-2.79-2.54-4.5-5-4.5-.42 0-.83.05-1.22.14A7 7 0 0 0 3 11.5c0 4.62 3.5 7.5 7.5 7.5h7"></path>
+              </svg>
+            </div>
+            <div class="tech-name">SQL & SQLite</div>
+            <div class="tech-desc">Efficient storage and management of financial and backtesting datasets.</div>
+          </div>
+          <!-- Financial Data APIs -->
+          <div class="tech-card">
+            <div class="tech-icon-container">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="2" y1="20" x2="22" y2="20"></line>
+                <line x1="12" y1="20" x2="12" y2="17"></line>
+              </svg>
+            </div>
+            <div class="tech-name">Financial Data APIs</div>
+            <div class="tech-desc">Real-time and historical market data integration for research and strategy evaluation.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Consultation Form -->
+    <section id="contact" class="reveal">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div>
+              <div class="badge">Inquiries</div>
+              <h2 style="margin-top: 12px; margin-bottom: 16px;">Partner With Us</h2>
+              <p style="color: var(--text-muted);">We partner with investors and businesses to develop quantitative research, financial analytics, and algorithmic trading solutions that support informed investment decisions.</p>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4>Direct Email</h4>
+                <p>solutions@aetheris.systems</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4>Global Office</h4>
+                <p>London Tech District &amp; Zurich FinTech Center</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Contact Form Panel -->
+          <div class="glass-panel contact-form-panel">
+            <form id="contact-form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Full Name</label>
+                  <input type="text" id="form-name" class="form-input" placeholder="Alexander Wright" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Work Email</label>
+                  <input type="email" id="form-email" class="form-input" placeholder="a.wright@firm.com" required>
+                </div>
+                <div class="form-group form-group-full">
+                  <label for="form-company" class="form-label">Company Name / Affiliation</label>
+                  <input type="text" id="form-company" class="form-input" placeholder="Wright Capital Management">
+                </div>
+                <div class="form-group form-group-full">
+                  <label for="form-msg" class="form-label">Project Details or Inquiries</label>
+                  <textarea id="form-msg" class="form-input" placeholder="Describe your software engineering, financial modeling, or strategy backtesting requirements..." required></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" id="btn-submit-form" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07090e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Submit Consultation Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="logo" style="margin-bottom: 16px;">
+            <div class="logo-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#07090e" stroke-width="3">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            AETHERIS
+          </a>
+          <p class="footer-desc">Professional software development, technology solutions, quantitative analysis, and mathematical modeling systems.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Capabilities</h4>
+          <ul>
+            <li><a href="#services">Software Engineering</a></li>
+            <li><a href="#services">Quantitative Research</a></li>
+            <li><a href="#services">Backtesting Pipelines</a></li>
+            <li><a href="#services">Financial Modeling</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Sandbox</h4>
+          <ul>
+            <li><a href="#sandbox">Execute Backtests</a></li>
+            <li><a href="#sandbox">Strategy Analysis</a></li>
+            <li><a href="#sandbox">Performance Metrics</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Firm</h4>
+          <ul>
+            <li><a href="#about">About Our Mission</a></li>
+            <li><a href="#contact">Contact Team</a></li>
+            <li><a href="#contact">Consultations</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aetheris Systems. All rights reserved. Built for institutional trading and analytical solutions.</p>
+        <div class="footer-legal">
+          <a href="#contact">Privacy Policy</a>
+          <a href="#contact">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast popup for form success -->
+  <div class="toast" id="success-toast">
+    <div class="toast-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <div class="toast-text">Consultation request sent successfully! We will contact you shortly.</div>
+  </div>
+
+  <!-- Include Javascript -->
+  <script src="app.js"></script>
+</body>
+</html>
